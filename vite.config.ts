@@ -9,7 +9,7 @@ export default defineConfig({
     WindiCSS({
       root: __dirname,
       scan: {
-        fileExtensions: ['erb', 'haml', 'html', 'vue', 'js', 'ts', 'jsx', 'tsx'],
+        fileExtensions: ['erb', 'js'],
         dirs: ['app/views', 'app/frontend'], // or app/javascript, or app/packs
       },
     }),
