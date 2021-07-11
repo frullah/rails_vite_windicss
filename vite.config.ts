@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import WindiCSS from 'vite-plugin-windicss'
 import RubyPlugin from 'vite-plugin-ruby'
+import FullReload from 'vite-plugin-full-reload'
 
 export default defineConfig({
   plugins: [
@@ -12,5 +13,6 @@ export default defineConfig({
         dirs: ['app/views', 'app/frontend'], // or app/javascript, or app/packs
       },
     }),
+    FullReload(['config/routes.rb', 'app/views/**/*'], { delay: 800, always: false })
   ],
 })
