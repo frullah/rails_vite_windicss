@@ -12,6 +12,7 @@ export default defineConfig({
         fileExtensions: ['erb', 'js'],
         dirs: ['app/views', 'app/frontend'], // or app/javascript, or app/packs
       },
+      preflight: false
     }),
     FullReload(['config/routes.rb', 'app/views/**/*'], { delay: 800, always: false })
   ],
