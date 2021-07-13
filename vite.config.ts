@@ -12,7 +12,13 @@ export default defineConfig({
       //   fileExtensions: ['erb', 'js'],
       //   dirs: ['app/views', 'app/frontend'], // or app/javascript, or app/packs
       // },
-      preflight: false
+      preflight: false,
+      config: {
+        extract: {
+          include: ["app/(views|frontend)/**/*"],
+          exclude: ["app/views/no_css/*"]
+        }
+      }
     }),
     FullReload(['config/routes.rb', 'app/views/**/*'], { delay: 800, always: false })
   ],
