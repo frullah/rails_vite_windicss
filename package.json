@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@types/node": "^16.4.5",
     "vite": "^2.4.1",
     "vite-plugin-ruby": "^2.0.4",
     "vite-plugin-windicss": "^1.2.4",
