@@ -1,24 +1,25 @@
-# README
+# Rails Vite WindiCSS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+simple integration with WindiCSS
 
-Things you may want to cover:
+## Step
 
-* Ruby version
+add windiCSS config file to `configFiles` in `vite.config.js` or `vite.config.ts`
 
-* System dependencies
+example
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```javascript
+export default defineConfig({
+  // ...
+  plugins: [
+    // ...
+    WindiCSS({
+      root: __dirname,
+      configFiles: [path.resolve("windi.config.ts")] // <== HERE! <==
+    }),
+    // ...
+  ],
+  // ...
+})
+```
+you can write WindiCSS config in the places where you add it on `configFiles`
