@@ -4,7 +4,7 @@ simple integration with WindiCSS
 
 ## Step
 
-add windiCSS config file to `configFiles` in `vite.config.js` or `vite.config.ts`
+add windiCSS config file path to `configFiles` in `vite.config.js` or `vite.config.ts`
 
 example
 
