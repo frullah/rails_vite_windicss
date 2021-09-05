@@ -9,6 +9,8 @@ add windiCSS config file to `configFiles` in `vite.config.js` or `vite.config.ts
 example
 
 ```javascript
+import path from 'path'
+
 export default defineConfig({
   // ...
   plugins: [
