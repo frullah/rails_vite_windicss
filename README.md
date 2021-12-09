@@ -24,4 +24,4 @@ export default defineConfig({
   // ...
 })
 ```
-you can write WindiCSS config in the places where you add it on `configFiles`
+and then you can write WindiCSS config in the places where you add it on `configFiles`
